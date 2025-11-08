@@ -9,3 +9,23 @@
 a {
     text-decoration: none;
 }
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(1161px / 7);
+    height: calc(810px / 3);
+    background: url(../images/img.png) 50% 50% no-repeat;
+    animation: animate 1s steps(7) infinite;
+}
+
+@keyframes animate {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -1161px;
+    }
+}
