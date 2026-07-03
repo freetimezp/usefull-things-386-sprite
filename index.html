@@ -2,15 +2,45 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./assets/css/style.css" />
-        <title>Project</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+        <link rel="stylesheet" href="assets/css/style.css" />
+
+        <title>Sprite Studio</title>
     </head>
-
     <body>
-        <div class="box"></div>
+        <div class="bg"></div>
 
-        <script src="./assets/js/main.js"></script>
+        <div class="particles"></div>
+
+        <div class="studio">
+            <div class="header">
+                <h1>SPRITE STUDIO</h1>
+
+                <div class="status">● Playing</div>
+            </div>
+
+            <div class="viewer">
+                <div class="sprite" id="sprite"></div>
+            </div>
+
+            <div class="controls">
+                <button data-row="0">Row 1</button>
+                <button data-row="1">Row 2</button>
+                <button data-row="2">Row 3</button>
+            </div>
+
+            <div class="bottom">
+                <button id="play">Pause</button>
+
+                <label>
+                    Speed
+
+                    <input id="speed" type="range" min="0.2" max="2" value="1" step=".1" />
+                </label>
+            </div>
+        </div>
+
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
